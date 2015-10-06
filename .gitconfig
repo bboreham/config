@@ -1,0 +1,7 @@
+[user]
+	email = bjboreham@gmail.com
+	name = Bryan Boreham
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600
