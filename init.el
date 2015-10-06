@@ -2,13 +2,13 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (cua-mode 1)
+(tool-bar-mode -1)
 (when (member "Droid Sans Mono" (font-family-list))
   (set-face-attribute 'default nil :font "Droid Sans Mono"))
 (add-to-list 'default-frame-alist '(font . "Droid Sans Mono-10"))
 
-(add-to-list 'load-path "~/.emacs.d/")
-(require 'go-mode-load)
-(load-file "~/golang/src/code.google.com/p/go.tools/cmd/oracle/oracle.el")
+(add-to-list 'load-path "~/go-mode.el/")
+(require 'go-mode-autoloads)
 
 (defun my-go-mode-hook ()
   ; Use goimports instead of go-fmt
@@ -21,8 +21,6 @@
            "go build -v && go test -v && go vet"))
   ; Godef jump key binding
   (local-set-key (kbd "M-.") 'godef-jump))
-  ; Go Oracle
-  (go-oracle-mode)
 (add-hook 'go-mode-hook 'my-go-mode-hook)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
