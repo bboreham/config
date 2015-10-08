@@ -1,4 +1,7 @@
 (global-set-key [f5] (quote compile))
+(global-set-key (kbd "C-.") (quote pop-global-mark))
+(global-unset-key (kbd "C-x C-c")) ; don't want this happening by accident
+(global-unset-key (kbd "C-x C-z")) ; or this
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (cua-mode 1)
@@ -34,3 +37,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(server-start)
+
+;; ========= Set colours ==========
+
+(set-foreground-color "white")
+(set-background-color "black")
