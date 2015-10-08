@@ -5,3 +5,9 @@
 	default = simple
 [credential]
 	helper = cache --timeout=3600
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[core]
+	editor = emacsclient
