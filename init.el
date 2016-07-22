@@ -1,4 +1,5 @@
-(global-set-key [f5] (quote compile))
+(global-set-key [f8] (quote compile))
+(global-set-key [f5] (quote revert-buffer))
 (global-set-key (kbd "C-.") (quote pop-global-mark))
 (global-unset-key (kbd "C-x C-c")) ; don't want this happening by accident
 (global-unset-key (kbd "C-x C-z")) ; or this
@@ -8,7 +9,7 @@
 (tool-bar-mode -1)
 (when (member "Droid Sans Mono" (font-family-list))
   (set-face-attribute 'default nil :font "Droid Sans Mono"))
-(add-to-list 'default-frame-alist '(font . "Droid Sans Mono-10"))
+;; (add-to-list 'default-frame-alist '(font . "Droid Sans Mono-10"))
 
 (add-to-list 'load-path "~/go-mode.el/")
 (require 'go-mode-autoloads)
