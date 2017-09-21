@@ -11,3 +11,5 @@
 	prompt = false
 [core]
 	editor = emacsclient
+[merge]
+  conflictstyle = diff3
