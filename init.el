@@ -6,6 +6,7 @@
 (global-set-key [f8] (quote compile))
 (global-set-key [f5] (quote revert-buffer))
 (global-set-key (kbd "C-.") (quote pop-global-mark))
+(global-set-key (kbd "C-^") (quote join-line))
 (global-unset-key (kbd "C-x C-c")) ; don't want this happening by accident
 (global-unset-key (kbd "C-x C-z")) ; or this
 (global-set-key (kbd "C-x g") 'magit-status)
