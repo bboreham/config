@@ -1,8 +1,14 @@
+;; Add Melpa location so we can install Magit.
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+
 (global-set-key [f8] (quote compile))
 (global-set-key [f5] (quote revert-buffer))
 (global-set-key (kbd "C-.") (quote pop-global-mark))
 (global-unset-key (kbd "C-x C-c")) ; don't want this happening by accident
 (global-unset-key (kbd "C-x C-z")) ; or this
+(global-set-key (kbd "C-x g") 'magit-status)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (cua-mode 1)
