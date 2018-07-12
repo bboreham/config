@@ -18,9 +18,6 @@
   (set-face-attribute 'default nil :font "Droid Sans Mono"))
 ;; (add-to-list 'default-frame-alist '(font . "Droid Sans Mono-10"))
 
-(add-to-list 'load-path "~/go-mode.el/")
-(require 'go-mode-autoloads)
-
 (defun my-go-mode-hook ()
   ; Use goimports instead of go-fmt
   ; (setq gofmt-command "goimports")
