@@ -118,3 +118,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+source <(kubectl completion bash)
+alias kd='kubectl --kubeconfig /home/vagrant/src/github.com/weaveworks/service-conf/ansible/dev/kubeconfig'
+alias kp='kubectl --kubeconfig /home/vagrant/src/github.com/weaveworks/service-conf/ansible/prod/kubeconfig'
