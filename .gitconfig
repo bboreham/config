@@ -12,6 +12,7 @@
 	prompt = false
 [core]
 	editor = emacsclient
+	excludesFile=~/.gitignore
 [merge]
   conflictstyle = diff3
 [gpg]
