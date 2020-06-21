@@ -12,6 +12,10 @@
 ;;   '("melpa" . "http://melpa.org/packages/")
    t)
 
+;; Work round Mac binding of meta key and #
+(global-set-key (kbd "M-3") "#")
+(global-set-key (kbd "C-x M-3") (quote server-edit))
+
 (global-set-key [f8] (quote compile))
 (global-set-key [f5] (quote revert-buffer))
 (global-set-key (kbd "C-.") (quote pop-global-mark))
@@ -22,7 +26,7 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (cua-mode 1)
-(tool-bar-mode -1)
+;; (tool-bar-mode -1)
 (when (member "Droid Sans Mono" (font-family-list))
   (set-face-attribute 'default nil :font "Droid Sans Mono"))
 ;; (add-to-list 'default-frame-alist '(font . "Droid Sans Mono-10"))
