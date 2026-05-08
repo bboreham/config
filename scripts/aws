@@ -1,0 +1,2 @@
+#! /bin/sh
+docker run --rm -e AWS_PROFILE -e AWS_CONFIG_FILE -v ~/.aws:/root/.aws -v ~/.kube:/root/.kube -v /Users/bryan/src/github.com/grafana/deployment_tools/scripts/sso/:/Users/bryan/src/github.com/grafana/deployment_tools/scripts/sso/ public.ecr.aws/aws-cli/aws-cli "$@"

@@ -1,0 +1,8 @@
+#! /bin/sh
+docker run --rm -i -u=1000:1000 \
+    -v /Users/bryan/.config/:/home/cloudsdk/.config/ \
+    -v /Users/bryan/.ssh/:/home/cloudsdk/.ssh/ \
+    -v /Users/bryan/.kube/:/home/cloudsdk/.kube/ \
+    -v /Users/bryan/.docker/:/home/cloudsdk/.docker/ \
+    gcr.io/google.com/cloudsdktool/cloud-sdk \
+    gcloud "$@"
