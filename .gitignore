@@ -1,2 +1,8 @@
-*~
-.bash_history
+-*~
+-.bash_history
+.vscode/launch.json
+before.txt
+after.txt
+cpu.pprof
+mem.pprof
+*.test
